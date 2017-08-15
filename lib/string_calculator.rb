@@ -1,7 +1,8 @@
 class StringCalculator
 
   def add_string_numbers(string)
-    0
+    return 0 if string == ''
+    string.to_i
   end
 
 
