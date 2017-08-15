@@ -1,7 +1,7 @@
 class StringCalculator
 
-  def add_string_numbers(argument)
-
+  def add_string_numbers(string)
+    0
   end
 
 
