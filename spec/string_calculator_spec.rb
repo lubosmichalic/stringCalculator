@@ -25,5 +25,10 @@ describe StringCalculator do
       expect(calculator.add_string_numbers('0,0,0,0,0,0,0,0,0,1')).to eq 1
     end
 
+    it 'should return zero when not given numbers' do
+      expect(calculator.add_string_numbers('string')).to eq 0
+      expect(calculator.add_string_numbers(',./-=``')).to eq 0
+    end
+
   end
 end
