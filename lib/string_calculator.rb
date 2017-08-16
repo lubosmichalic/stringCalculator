@@ -8,7 +8,7 @@ class StringCalculator
   private
 
   def transform_string_into_array_of_ints(string)
-    string.split(',').map(&:to_i)
+    string.split(/[\,,\\n]/).map(&:to_i)
   end
 
 end

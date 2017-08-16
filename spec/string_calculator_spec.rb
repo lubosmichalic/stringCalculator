@@ -30,5 +30,10 @@ describe StringCalculator do
       expect(calculator.add_string_numbers(',./-=``')).to eq 0
     end
 
+    it 'should allow a new line as a delimiter between numbers' do
+      expect(calculator.add_string_numbers('1,2\n3')).to eq 6
+      expect(calculator.add_string_numbers('1\n2,3')).to eq 6
+    end
+
   end
 end
