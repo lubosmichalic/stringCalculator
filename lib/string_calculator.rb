@@ -2,8 +2,13 @@ class StringCalculator
 
   def add_string_numbers(string)
     return 0 if string == ''
-    string.split(',').map(&:to_i).reduce(:+)
+    transform_string_into_array_of_ints(string).reduce(:+)
   end
 
+  private
+
+  def transform_string_into_array_of_ints(string)
+    string.split(',').map(&:to_i)
+  end
 
 end
